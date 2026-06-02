@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#8B0000">
+<title>Ponni Indian Groceries Singapore | 24/7 Indian Grocery Store at Buffalo Road</title>
+<meta name="description" content="Shop fresh Indian fruits, vegetables, snacks, and pantry staples at Ponni Indian Groceries, Singapore. Open 24 hours, 7 days a week at 72 Buffalo Road near MRT. Rated 4.4/5 by happy customers.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:#1c1007;background:#fdfaf5;-webkit-font-smoothing:antialiased}
+.wa-fab{position:fixed;bottom:24px;right:24px;z-index:9999;background:#25d366;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(37,211,102,.5);text-decoration:none;transition:transform .2s,box-shadow .2s}.wa-fab:hover{transform:scale(1.1);box-shadow:0 8px 32px rgba(37,211,102,.6)}
+[data-r]{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;}
+[data-r].r-in{opacity:1;transform:none;}
+[data-r][data-d="1"]{transition-delay:.1s;}[data-r][data-d="2"]{transition-delay:.22s;}
+[data-r][data-d="3"]{transition-delay:.34s;}[data-r][data-d="4"]{transition-delay:.46s;}
+[data-r][data-d="5"]{transition-delay:.58s;}[data-r][data-d="6"]{transition-delay:.70s;}
+.nav-s{box-shadow:0 2px 24px rgba(0,0,0,.12)!important;}
+nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(253,250,245,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,0,0,.06);padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:62px;transition:box-shadow .3s}
+.nav-brand{font-family:'Playfair Display',serif;font-size:1.1rem;color:#8B0000}
+.nav-cta{background:#2E7D32;color:#fff;padding:9px 22px;border-radius:50px;text-decoration:none;font-size:.83rem;font-weight:600;transition:opacity .2s}
+.nav-cta:hover{opacity:.88}
+/* HERO */
+.hero{position:relative;height:100svh;min-height:580px;display:flex;align-items:flex-end;overflow:hidden}
+.hero-bg{position:absolute;inset:-15%;width:130%;height:130%;background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=Ab43m-vf4NJdpHxZJj2KK5spbNfHPeSW9y5oiKNVycvp2i5Bc0VQiA1Aft6G_DvJmsgIvp3sRDxj09GQN1yIigSBFA-GRdEkl0k03dPN4AWLdVNTUni9o1SRbcj5Vd56x1AfObD_7q8ccl61MnDhaQag-bqL-I-YK8LPsDAaGjELYSpOvNKhZY3fDreKBx1AIljT93GCTt2-GsfQzziybthpTao3JJnpJo_zWAKuMIY8PUwjWHJNwyNB6BL-7r6UZ5IPnu3d4_E6NEmU8UCZNG3hEdxltDoduhCNp_9SF7MkCQmnKxrj6aVSlu-nW29XGtQdbPrSm4xK5Tfp07hC3i6jmw80VKA8OieSPWp5tNUv2BmD7Gw95I9lduSL_nm0bOLt_5reyMj3-0By1SPeXkqQ3713HyRngZR708cIkkxDpGI_Sw&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs');background-size:cover;background-position:center top;will-change:transform}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(12,6,0,.9) 0%,rgba(12,6,0,.3) 55%,transparent 100%)}
+.hero-content{position:relative;z-index:2;padding:0 5vw 56px;color:#fff;width:100%}
+.hero-tag{display:inline-flex;gap:6px;align-items:center;background:#2E7D32;padding:6px 16px;border-radius:50px;font-size:.76rem;font-weight:600;margin-bottom:18px}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,6.5vw,4rem);line-height:1.1;margin-bottom:14px;letter-spacing:-.02em}
+.hero p{font-size:clamp(.92rem,2vw,1.08rem);opacity:.84;margin-bottom:30px;max-width:500px;line-height:1.68}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-amber{background:#2E7D32;color:#fff;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:700;font-size:.93rem;box-shadow:0 4px 14px rgba(0,0,0,.25);transition:transform .15s}
+.btn-amber:hover{transform:translateY(-2px)}
+.btn-outline{border:1.5px solid rgba(255,255,255,.5);color:#fff;padding:13px 26px;border-radius:8px;text-decoration:none;font-size:.93rem;transition:background .2s}
+.btn-outline:hover{background:rgba(255,255,255,.1)}
+/* INFO STRIP */
+.info-strip{background:#8B0000;color:rgba(255,255,255,.9);display:flex;flex-wrap:wrap;justify-content:center;gap:0}
+.info-item{padding:14px 22px;display:flex;align-items:center;gap:8px;font-size:.86rem;border-right:1px solid rgba(255,255,255,.12)}
+.info-item:last-child{border:none}
+/* STORY */
+section{padding:68px 5vw}
+.container{max-width:980px;margin:0 auto}
+.sec-label{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:#2E7D32;margin-bottom:10px;font-weight:600}
+h2{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3.5vw,2.3rem);color:#8B0000;margin-bottom:16px;letter-spacing:-.01em}
+.story-grid{display:grid;grid-template-columns:1fr;gap:36px;align-items:center}
+@media(min-width:768px){.story-grid{grid-template-columns:1fr 1fr}}
+.story-img{width:100%;aspect-ratio:5/4;object-fit:cover;border-radius:16px;box-shadow:0 16px 40px rgba(0,0,0,.12)}
+.story-text p{color:#5a4a30;line-height:1.88;margin-bottom:14px;font-size:.94rem}
+.hl-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.hl-pill{background:#fdf0dc;color:#8B0000;border:1px solid #f0d8a0;padding:7px 16px;border-radius:50px;font-size:.82rem;font-weight:500}
+/* MENU */
+.menu-bg{background:#fff}
+.menu-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:36px}
+@media(min-width:480px){.menu-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.menu-grid{grid-template-columns:repeat(3,1fr)}}
+.menu-card{border:1px solid #ede8da;border-radius:14px;padding:24px;position:relative;overflow:hidden;transition:transform .22s,box-shadow .22s;background:#fdfcf8}
+.menu-card:hover{transform:translateY(-4px);box-shadow:0 10px 28px rgba(0,0,0,.08)}
+.menu-card:before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,#8B0000,#2E7D32)}
+.menu-icon{font-size:1.5rem;margin-bottom:12px;display:block}
+.menu-card h3{font-family:'Playfair Display',serif;color:#8B0000;font-size:1.05rem;margin-bottom:8px}
+.menu-card p{color:#7a6040;font-size:.86rem;line-height:1.65}
+/* PARALLAX STRIP */
+.ps-wrap{position:relative;min-height:320px;display:flex;align-items:center;overflow:hidden}
+#ps{position:absolute;inset:-20%;width:140%;height:140%;background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=Ab43m-vU3Vs7GsLEPZwazF1Nu7TuDOa-e71rMHCGrtP4XefYVnRZTGqnq0XT9ZLFICFkStnQ3RvooeVZarb9ZmUziLDL8cCaVWb1zQpgCFR_6H29XGBxH0eoOllFZUgcdheIDBRFiUacH8PjmqtqdL9y1FZUwT48yNdoONeJi5EIUWJjU9AxkxLxCAxT7KRtlpkmvpyYhnIInI3PxrRX3Ja8pBU2O51Gj48FR7yN8pdrGr4ZxAxR3fVJLFwuW3he0hmCUanc94RXI_PZq65m2gv_tuxhSj0mdZYCV_vmlmq0NuRw2xB_jNbE5ve6_LWvbvCMZjENc4SEWjtL7WeaT-SmmMizsfbpsCE0cwj2Rc6KDk_A0bNgFd6Zpch7oYDpdj7sefDsrMGX9fOSzHjUcUaK0bRTy9HQSyhewidKqCmwz7KM5vWwzj5A3WWFXM0X9P1a&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs');background-size:cover;background-position:center;will-change:transform}
+.ps-overlay{position:absolute;inset:0;background:linear-gradient(90deg,#8B0000f2 0%,#8B000099 60%,transparent 100%)}
+.ps-content{position:relative;z-index:2;padding:52px 5vw;color:#fff;max-width:520px}
+.ps-content h2{font-family:'Playfair Display',serif;font-size:clamp(1.5rem,3vw,2rem);margin-bottom:14px}
+.ps-content p{opacity:.82;margin-bottom:26px;font-size:.95rem;line-height:1.68}
+/* GALLERY */
+.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:600px){.gallery-grid{grid-template-columns:repeat(3,1fr)}}
+.gallery-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;transition:transform .3s,opacity .3s}
+.gallery-grid img:hover{transform:scale(1.03);opacity:.9}
+/* REVIEWS */
+.reviews-bg{background:#8B0000}
+.rv-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:36px}
+@media(min-width:640px){.rv-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.rv-grid{grid-template-columns:repeat(3,1fr)}}
+.rv-card{background:rgba(255,255,255,.1);border-radius:14px;padding:24px;backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.1)}
+.rv-stars{color:#fbbf24;margin-bottom:10px;font-size:1rem;letter-spacing:2px}
+.rv-text{color:rgba(255,255,255,.8);font-size:.9rem;line-height:1.75;font-style:italic;margin-bottom:12px}
+.rv-author{color:rgba(255,255,255,.48);font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+/* CTA */
+.cta-section{background:#2E7D32;color:#fff;text-align:center;padding:64px 5vw}
+.cta-section h2{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3vw,2.3rem);margin-bottom:12px}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+.cta-btn-w{background:#fff;color:#2E7D32;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:700}
+.cta-btn-o{border:2px solid rgba(255,255,255,.55);color:#fff;padding:13px 28px;border-radius:8px;text-decoration:none}
+footer{background:#0a0600;color:#7a6040;text-align:center;padding:26px;font-size:.8rem}
+</style>
+</head>
+<body>
+<nav>
+  <span class="nav-brand">Ponni Indian Groceries</span>
+  <a href="https://wa.me/9193953018?text=Hi%20Ponni%20Indian%20Groceries!%20I%20would%20like%20to%20know%20more%20about%20your%20products%20and%20current%20stock.%20Can%20you%20help%20me%3F" class="nav-cta">Order Now</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-bg" id="hp"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-tag">⭐ 4.4/5 · Google Rated</div>
+    <h1>Your Taste of India, Open Every Hour of Every Day</h1>
+    <p>Fresh produce, authentic snacks, and beloved Indian groceries — all just a visit away at Buffalo Road, Singapore.</p>
+    <div class="hero-btns">
+      <a href="https://wa.me/9193953018?text=Hi%20Ponni%20Indian%20Groceries!%20I%20would%20like%20to%20know%20more%20about%20your%20products%20and%20current%20stock.%20Can%20you%20help%20me%3F" class="btn-amber">Visit Us Anytime — We're Open 24/7</a>
+      <a href="tel:9395 3018" class="btn-outline">📞 Reserve a Table</a>
+    </div>
+  </div>
+</div>
+
+<div class="info-strip" data-r>
+  <div class="info-item">📞 9395 3018</div>
+  <div class="info-item">📍 72 Buffalo Rd, #2nd Shop MRT, Singapore 219810</div>
+  <div class="info-item">🕐 Monday: Open 24 hours | Tuesday: Open 24 hours | Wednesday: Open 24 hours | Thursday: Open 24 hours | Friday: Open 24 hours | Saturday: Open 24 hours | Sunday: Open 24 hours</div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="story-grid">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=Ab43m-vf4NJdpHxZJj2KK5spbNfHPeSW9y5oiKNVycvp2i5Bc0VQiA1Aft6G_DvJmsgIvp3sRDxj09GQN1yIigSBFA-GRdEkl0k03dPN4AWLdVNTUni9o1SRbcj5Vd56x1AfObD_7q8ccl61MnDhaQag-bqL-I-YK8LPsDAaGjELYSpOvNKhZY3fDreKBx1AIljT93GCTt2-GsfQzziybthpTao3JJnpJo_zWAKuMIY8PUwjWHJNwyNB6BL-7r6UZ5IPnu3d4_E6NEmU8UCZNG3hEdxltDoduhCNp_9SF7MkCQmnKxrj6aVSlu-nW29XGtQdbPrSm4xK5Tfp07hC3i6jmw80VKA8OieSPWp5tNUv2BmD7Gw95I9lduSL_nm0bOLt_5reyMj3-0By1SPeXkqQ3713HyRngZR708cIkkxDpGI_Sw&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Ponni Indian Groceries" class="story-img" loading="lazy" onerror="this.src='https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=Ab43m-vf4NJdpHxZJj2KK5spbNfHPeSW9y5oiKNVycvp2i5Bc0VQiA1Aft6G_DvJmsgIvp3sRDxj09GQN1yIigSBFA-GRdEkl0k03dPN4AWLdVNTUni9o1SRbcj5Vd56x1AfObD_7q8ccl61MnDhaQag-bqL-I-YK8LPsDAaGjELYSpOvNKhZY3fDreKBx1AIljT93GCTt2-GsfQzziybthpTao3JJnpJo_zWAKuMIY8PUwjWHJNwyNB6BL-7r6UZ5IPnu3d4_E6NEmU8UCZNG3hEdxltDoduhCNp_9SF7MkCQmnKxrj6aVSlu-nW29XGtQdbPrSm4xK5Tfp07hC3i6jmw80VKA8OieSPWp5tNUv2BmD7Gw95I9lduSL_nm0bOLt_5reyMj3-0By1SPeXkqQ3713HyRngZR708cIkkxDpGI_Sw&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs'" data-r>
+      <div data-r data-d="2">
+        <p class="sec-label">Our Story</p>
+        <h2>Made with Passion</h2>
+        <p class="story-text">Ponni Indian Groceries is your go-to destination for authentic Indian food products right in the heart of Singapore. Located conveniently near the MRT at 72 Buffalo Road, we stock a wide and carefully curated selection of Indian groceries — from freshly ripened mangoes and seasonal vegetables to ready-made snacks and pantry staples imported directly from India. Our friendly and courteous staff are always on hand to help you find exactly what you need.</p><p class="story-text">What sets us apart is our commitment to keeping Indian flavours accessible to the community around the clock — we are open 24 hours a day, 7 days a week, including all public holidays. Whether you are an early morning shopper or a late-night craving chaser, Ponni Indian Groceries is here for you. With a strong rating of 4.4 out of 5 from our valued customers, we take pride in offering quality products at affordable prices and a warm, welcoming shopping experience.</p>
+        <div class="hl-pills"><span class="hl-pill">Open 24 hours a day, 7 days a week — shop at your convenience, anytime</span><span class="hl-pill">Rated 4.4/5 by customers for quality products, fresh produce, and helpful staff</span><span class="hl-pill">Wide selection of authentic Indian groceries, fresh fruits, vegetables, and imported snacks</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="menu-bg">
+  <div class="container">
+    <div data-r><p class="sec-label">Menu</p><h2>What We Serve</h2></div>
+    <div class="menu-grid">
+      <div class="menu-card" data-r data-d="1"><span class="menu-icon">🍽️</span><h3>Fresh Fruits &amp; Vegetables</h3><p>Enjoy a regularly refreshed selection of fresh Indian fruits and vegetables, including popular picks like ripe mangoes and seasonal produce sourced for quality and freshness.</p></div><div class="menu-card" data-r data-d="2"><span class="menu-icon">🥘</span><h3>Imported Indian Snacks &amp; Packaged Foods</h3><p>Browse a wide assortment of snacks, ready-made packets like Idli, and packaged foods imported directly from India to satisfy your authentic cravings.</p></div><div class="menu-card" data-r data-d="3"><span class="menu-icon">🍜</span><h3>Indian Pantry Staples</h3><p>Stock up on essential Indian grocery items including spices, lentils, flours, rice, and other everyday cooking staples trusted by Indian households in Singapore.</p></div><div class="menu-card" data-r data-d="1"><span class="menu-icon">🥗</span><h3>24/7 Shopping Convenience</h3><p>We never close. Ponni Indian Groceries is open 24 hours every day of the week, making it the most convenient Indian grocery stop in the area, day or night.</p></div><div class="menu-card" data-r data-d="2"><span class="menu-icon">🍰</span><h3>In-Store Customer Assistance</h3><p>Our polite and helpful staff are always available in-store to guide you through our product range and ensure a pleasant shopping experience every time you visit.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="ps-wrap" data-r>
+  <div id="ps"></div>
+  <div class="ps-overlay"></div>
+  <div class="ps-content">
+    <p class="sec-label" style="color:rgba(255,255,255,.6)">Visit Us</p>
+    <h2>Dine With Us Today</h2>
+    <p>72 Buffalo Rd, #2nd Shop MRT, Singapore 219810 · Monday: Open 24 hours | Tuesday: Open 24 hours | Wednesday: Open 24 hours | Thursday: Open 24 hours | Friday: Open 24 hours | Saturday: Open 24 hours | Sunday: Open 24 hours</p>
+    <a href="https://wa.me/9193953018?text=Hi%20Ponni%20Indian%20Groceries!%20I%20would%20like%20to%20know%20more%20about%20your%20products%20and%20current%20stock.%20Can%20you%20help%20me%3F" style="background:#2E7D32;color:#fff;padding:13px 30px;border-radius:8px;text-decoration:none;font-weight:700;display:inline-block">💬 WhatsApp to Reserve</a>
+  </div>
+</div>
+
+<section><div class="container"><div data-r><p class="sec-label">Gallery</p><h2>A Peek Inside</h2></div><div class="gallery-grid" style="margin-top:28px"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=Ab43m-vf4NJdpHxZJj2KK5spbNfHPeSW9y5oiKNVycvp2i5Bc0VQiA1Aft6G_DvJmsgIvp3sRDxj09GQN1yIigSBFA-GRdEkl0k03dPN4AWLdVNTUni9o1SRbcj5Vd56x1AfObD_7q8ccl61MnDhaQag-bqL-I-YK8LPsDAaGjELYSpOvNKhZY3fDreKBx1AIljT93GCTt2-GsfQzziybthpTao3JJnpJo_zWAKuMIY8PUwjWHJNwyNB6BL-7r6UZ5IPnu3d4_E6NEmU8UCZNG3hEdxltDoduhCNp_9SF7MkCQmnKxrj6aVSlu-nW29XGtQdbPrSm4xK5Tfp07hC3i6jmw80VKA8OieSPWp5tNUv2BmD7Gw95I9lduSL_nm0bOLt_5reyMj3-0By1SPeXkqQ3713HyRngZR708cIkkxDpGI_Sw&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Ponni Indian Groceries" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=Ab43m-vU3Vs7GsLEPZwazF1Nu7TuDOa-e71rMHCGrtP4XefYVnRZTGqnq0XT9ZLFICFkStnQ3RvooeVZarb9ZmUziLDL8cCaVWb1zQpgCFR_6H29XGBxH0eoOllFZUgcdheIDBRFiUacH8PjmqtqdL9y1FZUwT48yNdoONeJi5EIUWJjU9AxkxLxCAxT7KRtlpkmvpyYhnIInI3PxrRX3Ja8pBU2O51Gj48FR7yN8pdrGr4ZxAxR3fVJLFwuW3he0hmCUanc94RXI_PZq65m2gv_tuxhSj0mdZYCV_vmlmq0NuRw2xB_jNbE5ve6_LWvbvCMZjENc4SEWjtL7WeaT-SmmMizsfbpsCE0cwj2Rc6KDk_A0bNgFd6Zpch7oYDpdj7sefDsrMGX9fOSzHjUcUaK0bRTy9HQSyhewidKqCmwz7KM5vWwzj5A3WWFXM0X9P1a&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Ponni Indian Groceries" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=Ab43m-um_GqopDLHoYxFGQioPgNDzAzyna-YLD0nd4UqpSj04Z6QHlEUMWjcqhT4pVH5MYSUjK2FT9NIxc6pzVvuAxaZT-K0liaibImQLJ8BV6g8nFw6-VDR0ph1g6Zcgf0vS1jsjRjbRtjmM25kO5rxU6OLRmBigxxdlNvHH6rHFCol2ofPSXYEAbyvFfCrmNAmLHw_lCzhQT_nO1Deoo9Yik9G92ppERVOpSV4hZeROxmSGbxrrVqkY8cDVsNq4-2UiILUlXIThHxyMOU1s9QIDcxQZYWl_82O91xnWq0FrgBWhQwXmoRqs3cH4GKrmR1-dZepVriYdJuLybH-oRHsSGdh3MeSa-k4r3zyvDVdk5iptP0XGZVAgrIH2o5llCu9W0VDQZ2bFazKzPhgs__bKgZcLQipHWluMFd0vSQdGEqW3OWf&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Ponni Indian Groceries" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=Ab43m-vUfYtPAiYUQexE-RXC7mw2lBviTUwaxXCV3wptnk8SxqB8_oOor6HA1epnp0lsZZI4f58D9YeAUVA24FQCj8OzTkH07H9gtS1CydGvcqiGVP2pWJRbBJ3lTbs-swMDlgt2rfNspcel4mL11X_B9uODEq2MeUTnXvzhF6v2tpADGoon5ffNdjLD12SlBSYcwkS338pO8TfGn-_pDBwG7D1cxkFeovck74QdOpXKpT7z3XY9DYtPwjXVKIdkCxFzjwdkPv7v6kZ2OPOvX-aNP0ozHJypVRWUgIB9F-aV2T5XMJp_k0Z6TJUykr_5dZ6_6Qn03xfQvG8Yuudk_80Uk8jlCG0BnQTPDrt_ZY4RNNJ0Bz8t-AwmJ93AyMoU3DIRQ59Y_Ikp5Tb7vGP3886U78JtboXWQgUa0tapn4GE2HevLg8H&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Ponni Indian Groceries" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=Ab43m-sdwc1X9NI7-GPALZpmWnKafnGt_gbOk9Q-FcFjF4_20UNYl3VKZU021d-7Ii0rZi9LyNUfAgDp_683JOjQV60OXgc5yWoiAPJ6y7_Vq3d0fyWCcXemF4e1Mg6oqJ8vKTm2qjo1J7s7iWVN91pIqk9Np_mwGP7cL0IVszWxZQMAdNc6Lj8ULW8Ciz0sED7nj33NriQKWiR3x9Pf1wAzX6gJv9mdptPqx-aF368SGBHTYeT4ubuDk_0TeMUda9DBRHKHoD6yQW7XekBSBTUZEx3U0yja0hlQLujfXLaHAZgjFc5drjas3MUghfqFQxlLSaDBD9zvqEHWnBeafx6uU77eDHCrDZODwL-J5WgOA_zlWHJj6NdcFu-wkosNl-Z9xpRdWzx74ShFcQJfaPbZMzDZGXvxXbMnEfL9CMRQ9mTkqr7RFdHDGKJDxRo8kKZt&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Ponni Indian Groceries" loading="lazy" onerror="this.parentElement.remove()"></div></div></section>
+
+<section class="reviews-bg">
+  <div class="container">
+    <div data-r><p class="sec-label" style="color:rgba(255,255,255,.5)">Reviews</p><h2 style="color:#fff">Guest Stories</h2></div>
+    <div class="rv-grid">
+      <div class="rv-card" data-r data-d="NaN"><div class="rv-stars">★★★★★</div><p class="rv-text">"I picked up fresh ready made Idli packet, fresh ripen mangoes of two types and many snacks imported from India. I found it reasonable. The person at the cashier counter spoke to me politely."</p><div class="rv-author">— Ms. Suchi Singapore</div></div><div class="rv-card" data-r data-d="NaN"><div class="rv-stars">★★★★★</div><p class="rv-text">"Good quality products for very affordable prices. Staff is very helpful too. Vegetables are not too bad too. I do recommend this place to buy your Indian goods and vegetables."</p><div class="rv-author">— Sula Cham</div></div><div class="rv-card" data-r data-d="NaN"><div class="rv-stars">★★★★★</div><p class="rv-text">"Nice assortment of fresh produce. Popular on the weekends."</p><div class="rv-author">— Choong Huei Seow</div></div><div class="rv-card" data-r data-d="NaN"><div class="rv-stars">★★★★☆</div><p class="rv-text">"Nice store. Stocks most of the needed Indian groceries including fresh fruit and vegetables."</p><div class="rv-author">— Arjun Trivedi</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-section" data-r>
+  <p class="sec-label" style="color:rgba(255,255,255,.7)">Get In Touch</p>
+  <h2>Come Taste the Difference</h2>
+  <p style="opacity:.84;max-width:440px;margin:0 auto;font-size:.94rem">72 Buffalo Rd, #2nd Shop MRT, Singapore 219810</p>
+  <div class="cta-btns">
+    <a href="https://wa.me/9193953018?text=Hi%20Ponni%20Indian%20Groceries!%20I%20would%20like%20to%20know%20more%20about%20your%20products%20and%20current%20stock.%20Can%20you%20help%20me%3F" class="cta-btn-w">💬 WhatsApp Order</a>
+    <a href="tel:9395 3018" class="cta-btn-o">📞 9395 3018</a>
+    <a href="https://maps.google.com/?cid=1299405741356570941" class="cta-btn-o">📍 Directions</a>
+  </div>
+</div>
+<footer>© 2026 Ponni Indian Groceries · All Rights Reserved</footer>
+<a href="https://wa.me/9193953018?text=Hi%20Ponni%20Indian%20Groceries!%20I%20would%20like%20to%20know%20more%20about%20your%20products%20and%20current%20stock.%20Can%20you%20help%20me%3F" class="wa-fab" aria-label="WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+// Scroll-reveal
+(function(){
+  var els=document.querySelectorAll('[data-r]');
+  if(!els.length)return;
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('r-in');obs.unobserve(e.target);}});
+  },{threshold:0.1,rootMargin:'0px 0px -48px 0px'});
+  els.forEach(function(el){obs.observe(el);});
+})();
+// Nav shadow
+(function(){
+  var nav=document.querySelector('nav');
+  if(!nav)return;
+  window.addEventListener('scroll',function(){nav.classList.toggle('nav-s',window.scrollY>50);},{passive:true});
+})();
+// Parallax
+if(window.innerWidth>768){
+  var hp=document.getElementById('hp'),ps=document.getElementById('ps');
+  window.addEventListener('scroll',function(){
+    var y=window.scrollY;
+    if(hp)hp.style.transform='translateY('+y*.3+'px)';
+    if(ps){var r=ps.closest('.ps-wrap').getBoundingClientRect();ps.style.transform='translateY('+r.top*.2+'px)';}
+  },{passive:true});
+}
+</script>
+</body></html>
